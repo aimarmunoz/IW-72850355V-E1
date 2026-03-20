@@ -29,7 +29,64 @@
             <li>Email: info@tecnoexp.es</li>
             <li>Horario: lunes a viernes de 8:00 a 18:00</li>
         </ul>
-        <!-- aqui va el futuro formulario para todo esto-->
+        <h2>Formulario de contacto</h2>
+        <form id="formulario1">
+            <div class="formulario2">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="formulario2">
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email" placeholder="correo@empresa.com" required>
+            </div>
+            <div class="formulario2">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="(en el caso de ser cliente)" required>
+            </div>
+            <div class="formulario2">
+                <label for="plantas">Numero de plantas</label>
+                <input type="number" id="plantas" name="plantas" min="1" max="50" value="1" required>
+            </div>
+            <div class="formulario2">
+                <label for="fecha">Fecha preferida de reunion</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="formulario2">
+                <label for="tipo">Tipo de proyecto</label>
+                <select id="tipo" name="tipo">
+                    <optgroup label="Selecciona una opcion">
+                        <option value="seleccion" hidden>Selecciona una opcion</option>
+                        <option value="otro">Otro</option>
+                        <option value="automatizacion">Automatizacion de lineas</option>
+                        <option value="iot">IoT industrial</option>
+                        <option value="analitica">Analitica de datos</option>
+                        <option value="robotica">Robotica</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="formulario2">
+                <label>Presupuesto estimado</label>
+                <div class="opciones">
+                    <label><input type="radio" name="presupuesto" value="menos50k"> Menos de 50.000 €</label>
+                    <label><input type="radio" name="presupuesto" value="50-150k"> 50.000 - 150.000 €</label>
+                    <label><input type="radio" name="presupuesto" value="mas150k"> Mas de 150.000 €</label>
+                </div>
+            </div>
+            <div class="formulario2">
+                <label>Servicios de interes</label>
+                <div class="opciones">
+                    <label><input type="checkbox" name="servicio" value="automatizacion"> Automatizacion</label>
+                    <label><input type="checkbox" name="servicio" value="iot"> IoT</label>
+                    <label><input type="checkbox" name="servicio" value="analitica"> Analitica</label>
+                    <label><input type="checkbox" name="servicio" value="robotica"> Robotica</label>
+                </div>
+            </div>
+            <div class="formulario2">
+                <label for="mensaje">Descripcion del proyecto</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Que necesitas..."></textarea>
+            </div>
+            <button type="button" id="btn-enviar">Enviar solicitud</button>
+        </form>
     </main>
     <footer>
         <div class="footer-columnas">
