@@ -41,7 +41,7 @@
             </div>
             <div class="formulario2">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="(en el caso de ser cliente)" required>
+                <input type="password" id="password" name="password" placeholder="(en el caso de ser cliente)">
             </div>
             <div class="formulario2">
                 <label for="plantas">Numero de plantas</label>
@@ -71,6 +71,7 @@
                     <label><input type="radio" name="presupuesto" value="50-150k"> 50.000 - 150.000 €</label>
                     <label><input type="radio" name="presupuesto" value="mas150k"> Mas de 150.000 €</label>
                 </div>
+                <div id="aviso-presupuesto" style="margin-top:5px; color:#555;"></div>
             </div>
             <div class="formulario2">
                 <label>Servicios de interes</label>
@@ -86,6 +87,7 @@
                 <textarea id="mensaje" name="mensaje" rows="5" placeholder="Que necesitas..."></textarea>
             </div>
             <button type="button" id="btn-enviar">Enviar solicitud</button>
+            <div id="mensaje-resultado" style="margin-top:10px;"></div>
         </form>
     </main>
     <footer>
@@ -116,6 +118,7 @@
             <p>© 2025 TecnologiaExplosiva S.L. — Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
