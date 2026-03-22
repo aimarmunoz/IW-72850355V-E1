@@ -189,3 +189,27 @@ button:hover {
     background-color: #d5d5d5;
     transition: 250ms;
 }
+
+#titulo-servicios {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 15px;
+}
+
+#imagen-servicios {
+    height: 100px;
+    width: 100px;
+}
+
+#titulo-contactos {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 15px;
+}
+
+#imagen-contacto {
+    height: 100px;
+    width: 100px;
+}
